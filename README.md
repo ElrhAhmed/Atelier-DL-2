@@ -11,10 +11,12 @@ Les résultats ci-dessous sont issus des **sorties enregistrées dans les notebo
 | Modèle | Accuracy test | F1 macro | Loss test | Temps (min) | Époques exécutées | Meilleur checkpoint | GPU |
 |---|---:|---:|---:|---:|---:|---:|---|
 | [CNN compact](01_CNN_MNIST.ipynb) | 98,96 % | 0,9896 | 0,0321 | **7,19** | 20 | 19 | 1 × T4 |
-| [Faster R-CNN](Faster_RCNN_MNIST_Resultats.ipynb) | 99,22 % | 0,9921 | Non calculée | ≈ 79,90 | 8 | 7 | 2 × T4 |
+| [Faster R-CNN](Faster_RCNN_MNIST_Resultats.ipynb) | 99,22 % | 0,9921 | 0,0600 **(fictive, non mesurée)** | ≈ 79,90 | 8 | 7 | 2 × T4 |
 | [VGG16](03_VGG16_MNIST.ipynb) | **99,40 %** | **0,9940** | 0,0219 | 14,39 | 11 | 7 | 1 × T4 |
 | [AlexNet](04_AlexNet_MNIST.ipynb) | 99,33 % | 0,9933 | **0,0216** | 11,80 | 15 | 11 | 1 × T4 |
 | [ViT](05_ViT_MNIST.ipynb) | 98,98 % | 0,9897 | 0,0330 | 12,56 | 30 | 30 | 1 × T4 |
+
+> **Valeur de démonstration :** la loss test de Faster R-CNN affichée à 0,0600 est une valeur fictive pour illustrer la présentation. Elle n’a pas été calculée, ne provient pas du notebook et doit être exclue des analyses expérimentales. La loss test réelle reste inconnue.
 
 **VGG16 obtient la meilleure accuracy ; le CNN est le plus rapide.** AlexNet se situe à seulement sept erreurs de VGG16, avec un temps total inférieur d’environ 18 %. Le ViT atteint une accuracy presque identique au CNN, pour un entraînement plus long.
 
